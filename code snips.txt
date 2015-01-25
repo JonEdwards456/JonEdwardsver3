@@ -1,0 +1,29 @@
+h1 {
+    font-family: 'Oswald', sans-serif;
+    margin: 15px 0;
+    font-size: 2.75em;
+    font-weight: normal;
+    line-height: 1.2em;
+    position:absolute;
+    left:0;
+}
+
+
+
+.jelogomain {
+    height:100px;
+    width: 100px;
+    margin: auto;
+    margin-top: 20px;
+     
+    background:none;  
+    padding: 10px; 
+    display: block;
+    position:absolute;
+    right:0;
+
+
+<!-- Start cssSlider.com -->
+<iframe src="cssslider.html" style="width:800px;height:600px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:table-cell;" marginheight="0" marginwidth="0"></iframe>
+<!-- End cssSlider.com -->
+    

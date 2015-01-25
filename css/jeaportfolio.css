@@ -1,0 +1,758 @@
+/****************************
+  /$$$$$$  /$$$$$$$$ /$$   /$$ /$$$$$$$$ /$$$$$$$   /$$$$$$  /$$      
+ /$$__  $$| $$_____/| $$$ | $$| $$_____/| $$__  $$ /$$__  $$| $$      
+| $$  \__/| $$      | $$$$| $$| $$      | $$  \ $$| $$  \ $$| $$      
+| $$ /$$$$| $$$$$   | $$ $$ $$| $$$$$   | $$$$$$$/| $$$$$$$$| $$      
+| $$|_  $$| $$__/   | $$  $$$$| $$__/   | $$__  $$| $$__  $$| $$      
+| $$  \ $$| $$      | $$\  $$$| $$      | $$  \ $$| $$  | $$| $$      
+|  $$$$$$/| $$$$$$$$| $$ \  $$| $$$$$$$$| $$  | $$| $$  | $$| $$$$$$$$
+ \______/ |________/|__/  \__/|________/|__/  |__/|__/  |__/|________/
+                                                                      
+                                                                      
+                                                                      
+*****************************/
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+/*    font-family: 'Quicksand', sans-serif;*/
+    font-family: 'Istok Web', sans-serif;
+    background: none;
+    width: 100%;
+    margin: auto;
+    font-weight: 700;
+}
+
+html { 
+  background: url(../img/background%20vivid%20light.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*is this necessary to style columns?*/
+
+html,
+body,
+.main-wrapper,
+#wrapper,
+.header,
+.col,
+ {
+    height: 100%;
+}
+
+
+/*
+#animex {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+    
+    -moz-animation-duration: 3s;
+  -moz-animation-delay: 2s;
+  -moz-animation-iteration-count: infinite;
+    
+    -o-animation-duration: 3s;
+  -o-animation-delay: 2s;
+  -o-animation-iteration-count: infinite;
+}
+*/
+
+
+
+/* animated border radius test next 3 comments
+#myDIV {
+    background: rgba(81, 175, 173, 0.67);
+    
+    
+    margin: auto;
+    margin-top: 15px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    -webkit-animation: mymove 2s infinite;  Chrome, Safari, Opera 
+    animation: mymove 2s infinite;
+}
+*/
+
+/* Chrome, Safari, Opera */
+/*
+@-webkit-keyframes mymove {
+    50% {border-radius: 50px;}
+}
+*/
+
+/* Standard syntax */
+/*
+@keyframes mymove {
+    50% {border-radius: 50px;}
+}
+*/
+
+p{
+   font-family: 'Istok Web', sans-serif;  
+    margin: 5px 10px;
+    
+}
+
+h2, h3 {
+        font-size: 2.00em;
+        padding-top: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    }
+
+h3 {
+    
+    font-size: 1.25em;
+    
+
+}
+
+.pagedesc p {
+    margin: 5px auto;
+    max-width: 85%;
+    
+    font-weight: 700;
+    font-size: 1.1em;
+    
+}
+.spanItal {
+    font-style: italic;
+}
+
+.spanEntry {
+    word-wrap: break-word;
+    font-family: 'Istok Web', sans-serif;  
+    margin: 5px 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+
+
+#promo {
+    max-height: 350px;
+    display: block;
+    margin: auto;
+}
+#wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.pagedesc {
+    background-color: rgba(51, 204, 139, 0.38);
+    
+    
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.desctext::before, .desctext::after {
+    content: url("../img/optimized/resume-icon.png");
+}
+
+.desctext {
+    color:#003D00;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+   
+    list-style: none;
+    border-radius: 25px;
+    margin: auto;
+    white-space: nowrap;
+}
+
+
+
+
+
+/*
+  /$$$$$$   /$$$$$$  /$$       /$$   /$$ /$$      /$$ /$$   /$$  /$$$$$$ 
+ /$$__  $$ /$$__  $$| $$      | $$  | $$| $$$    /$$$| $$$ | $$ /$$__  $$
+| $$  \__/| $$  \ $$| $$      | $$  | $$| $$$$  /$$$$| $$$$| $$| $$  \__/
+| $$      | $$  | $$| $$      | $$  | $$| $$ $$/$$ $$| $$ $$ $$|  $$$$$$ 
+| $$      | $$  | $$| $$      | $$  | $$| $$  $$$| $$| $$  $$$$ \____  $$
+| $$    $$| $$  | $$| $$      | $$  | $$| $$\  $ | $$| $$\  $$$ /$$  \ $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$$|  $$$$$$/| $$ \/  | $$| $$ \  $$|  $$$$$$/
+ \______/  \______/ |________/ \______/ |__/     |__/|__/  \__/ \______/ 
+                                                                         
+                             */                                            
+                                                                         
+/*added columns code */
+
+
+.col {
+    height: 100%;
+}
+
+.primary-content   { background-color: rgba(0, 0, 0, 0); }
+.secondary-content { background-color: rgba(0, 0, 0, 0); }
+
+.col {
+    display: inline-block;
+    padding: 10px;
+    margin-right: -5px;
+    vertical-align: top;
+}
+.primary-content {
+    width: 60%;
+}
+.secondary-content {
+    width: 40%;
+}
+
+.colImg , .colImg2nd{
+    width:28%;
+    display: inline-block;
+    margin-left: 15px;
+    word-break: break-all;
+}
+
+.colImgcap {
+    white-space: normal;
+     font-size: .8em;
+   
+}
+
+.colImglink {
+    border-radius: 100%;
+    border:2px solid rgb(46, 147, 104);
+    box-shadow: 3px 3px 2px 2px rgba(9, 46, 13, 0.71);
+}
+
+.colEntry {
+    background: rgba(81, 175, 173, 0.67);
+    border-radius: 5%;
+    margin-top: 15px;
+    
+
+}
+
+
+/*
+
+  /$$$$$$  /$$$$$$$   /$$$$$$  /$$       /$$$$$$ /$$$$$$$$ /$$$$$$$ 
+ /$$__  $$| $$__  $$ /$$__  $$| $$      |_  $$_/| $$_____/| $$__  $$
+| $$  \__/| $$  \ $$| $$  \ $$| $$        | $$  | $$      | $$  \ $$
+|  $$$$$$ | $$$$$$$/| $$  | $$| $$        | $$  | $$$$$   | $$$$$$$/
+ \____  $$| $$____/ | $$  | $$| $$        | $$  | $$__/   | $$__  $$
+ /$$  \ $$| $$      | $$  | $$| $$        | $$  | $$      | $$  \ $$
+|  $$$$$$/| $$      |  $$$$$$/| $$$$$$$$ /$$$$$$| $$$$$$$$| $$  | $$
+ \______/ |__/       \______/ |________/|______/|________/|__/  |__/
+                                                                    
+                    */                                                
+                                                                    
+
+/*NEW SPOLIER STYLES*/
+button {
+  background: #dae1e4;
+  border: none;
+  border-radius: 5px;
+  color: #1d3c6a;
+  font-size: 24px;
+  width: 200px;
+  padding: 5px 0;
+  margin: 5px -5px;
+  outline: none;
+  cursor: pointer;
+}
+.spoiler, .newbutton {
+    background: #1d3c6a;
+  width: 200px;
+  margin: 0 auto 5px;
+  border-radius: 5px;
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 24px
+}
+.spoiler span {
+  color: #dae1e4;
+}
+
+.newbutton span {
+  color: #dae1e4;
+}
+
+
+/****************************
+  /$$$$$$  /$$       /$$$$$$ /$$$$$$$  /$$$$$$$$ /$$$$$$$ 
+ /$$__  $$| $$      |_  $$_/| $$__  $$| $$_____/| $$__  $$
+| $$  \__/| $$        | $$  | $$  \ $$| $$      | $$  \ $$
+|  $$$$$$ | $$        | $$  | $$  | $$| $$$$$   | $$$$$$$/
+ \____  $$| $$        | $$  | $$  | $$| $$__/   | $$__  $$
+ /$$  \ $$| $$        | $$  | $$  | $$| $$      | $$  \ $$
+|  $$$$$$/| $$$$$$$$ /$$$$$$| $$$$$$$/| $$$$$$$$| $$  | $$
+ \______/ |________/|______/|_______/ |________/|__/  |__/
+                                                          
+                                                          
+                                                          
+*****************************/
+
+.captionOrange, .captionBlack
+        {
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .captionOrange
+        {
+            background: #0b6d5e;
+            background-color: rgb(11, 109, 94);
+        }
+        .captionBlack
+        {
+        	font-size:16px;
+            background: #000;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+        {
+        	color: #ffffff;
+        	text-decoration: none;
+        }
+        a.captionOrange:hover
+        {
+            color: #eb5100;
+            text-decoration: underline;
+            background-color: #eeeeee;
+            background-color: rgba(238, 238, 238, 0.7);
+        }
+        .bricon
+        {
+            background: url(../img/browser-icons.png);
+        }
+
+
+    .slider1_container {
+        margin:auto;
+    }
+
+
+/*end caption styles*/
+
+
+
+
+
+
+/****************************
+ /$$   /$$ /$$$$$$$$  /$$$$$$  /$$$$$$$  /$$$$$$$$ /$$$$$$$ 
+| $$  | $$| $$_____/ /$$__  $$| $$__  $$| $$_____/| $$__  $$
+| $$  | $$| $$      | $$  \ $$| $$  \ $$| $$      | $$  \ $$
+| $$$$$$$$| $$$$$   | $$$$$$$$| $$  | $$| $$$$$   | $$$$$$$/
+| $$__  $$| $$__/   | $$__  $$| $$  | $$| $$__/   | $$__  $$
+| $$  | $$| $$      | $$  | $$| $$  | $$| $$      | $$  \ $$
+| $$  | $$| $$$$$$$$| $$  | $$| $$$$$$$/| $$$$$$$$| $$  | $$
+|__/  |__/|________/|__/  |__/|_______/ |________/|__/  |__/
+                                                            
+  /$$$           /$$                                 /$$ /$$                    
+ /$$ $$         | $$                                | $$|__/                    
+|  $$$          | $$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$$ /$$ /$$$$$$$   /$$$$$$ 
+ /$$ $$/$$      | $$__  $$ /$$__  $$ |____  $$ /$$__  $$| $$| $$__  $$ /$$__  $$
+| $$  $$_/      | $$  \ $$| $$$$$$$$  /$$$$$$$| $$  | $$| $$| $$  \ $$| $$  \ $$
+| $$\  $$       | $$  | $$| $$_____/ /$$__  $$| $$  | $$| $$| $$  | $$| $$  | $$
+|  $$$$/$$      | $$  | $$|  $$$$$$$|  $$$$$$$|  $$$$$$$| $$| $$  | $$|  $$$$$$$
+ \____/\_/      |__/  |__/ \_______/ \_______/ \_______/|__/|__/  |__/ \____  $$
+                                                                       /$$  \ $$
+                                                                      |  $$$$$$/
+                                                                       \______/                                                            
+                                                            
+*****************************/
+
+header {
+    
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width:100%;
+    max-height: 700px;
+    position: relative;
+    min-height: 175px;
+    
+}
+
+/*#logo {
+    text-align: center;
+    margin:0;
+}*/
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    margin: 15px 0;
+    font-size: 2.75em;
+    font-weight: normal;
+    line-height: 1.2em;
+    display: block;
+
+    }
+
+
+
+
+/****************************
+ /$$   /$$  /$$$$$$  /$$    /$$ /$$$$$$  /$$$$$$   /$$$$$$  /$$$$$$$$ /$$$$$$  /$$$$$$  /$$   /$$
+| $$$ | $$ /$$__  $$| $$   | $$|_  $$_/ /$$__  $$ /$$__  $$|__  $$__/|_  $$_/ /$$__  $$| $$$ | $$
+| $$$$| $$| $$  \ $$| $$   | $$  | $$  | $$  \__/| $$  \ $$   | $$     | $$  | $$  \ $$| $$$$| $$
+| $$ $$ $$| $$$$$$$$|  $$ / $$/  | $$  | $$ /$$$$| $$$$$$$$   | $$     | $$  | $$  | $$| $$ $$ $$
+| $$  $$$$| $$__  $$ \  $$ $$/   | $$  | $$|_  $$| $$__  $$   | $$     | $$  | $$  | $$| $$  $$$$
+| $$\  $$$| $$  | $$  \  $$$/    | $$  | $$  \ $$| $$  | $$   | $$     | $$  | $$  | $$| $$\  $$$
+| $$ \  $$| $$  | $$   \  $/    /$$$$$$|  $$$$$$/| $$  | $$   | $$    /$$$$$$|  $$$$$$/| $$ \  $$
+|__/  \__/|__/  |__/    \_/    |______/ \______/ |__/  |__/   |__/   |______/ \______/ |__/  \__/
+                                                                                                 
+                                                                                                 
+                                                                                                 
+*****************************/
+
+.navdiv {
+    text-align:  center;
+    padding: 10px 0;
+    margin: 20px 0 0;
+    padding-bottom: 10px;
+}
+
+.navdiv ul {
+    list-style: none;
+    margin: auto;
+}
+
+
+
+
+.navdiv ul a {
+    font-weight: 800;
+    padding: 15px 10px;
+}
+
+
+/****************SIZING**************/
+
+.navdiv ul li {
+    display:block;
+    padding:2px;
+    margin:auto;
+    background: rgb(8, 42, 67);
+    width: 100%;
+    border-radius: 25px;
+    height:2em;
+/*    margin-right: 5px;*/
+    margin-bottom: 5px;
+}
+
+/*.container {
+  width: 700px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}*/
+
+
+
+.textlogo {
+    margin:auto;
+    width:100%;
+    
+    /*padding:9px;*/
+    display: block;
+}
+
+.navdiv ul {
+    padding: 10px;
+}
+
+
+
+.jelogomain {
+    height:200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+     
+    background:none;  
+    padding: 10px; 
+    display: block;
+}
+
+
+/****************************
+ /$$$$$$$   /$$$$$$  /$$$$$$$  /$$$$$$$$ /$$$$$$$$ /$$$$$$  /$$       /$$$$$$  /$$$$$$ 
+| $$__  $$ /$$__  $$| $$__  $$|__  $$__/| $$_____//$$__  $$| $$      |_  $$_/ /$$__  $$
+| $$  \ $$| $$  \ $$| $$  \ $$   | $$   | $$     | $$  \ $$| $$        | $$  | $$  \ $$
+| $$$$$$$/| $$  | $$| $$$$$$$/   | $$   | $$$$$  | $$  | $$| $$        | $$  | $$  | $$
+| $$____/ | $$  | $$| $$__  $$   | $$   | $$__/  | $$  | $$| $$        | $$  | $$  | $$
+| $$      | $$  | $$| $$  \ $$   | $$   | $$     | $$  | $$| $$        | $$  | $$  | $$
+| $$      |  $$$$$$/| $$  | $$   | $$   | $$     |  $$$$$$/| $$$$$$$$ /$$$$$$|  $$$$$$/
+|__/       \______/ |__/  |__/   |__/   |__/      \______/ |________/|______/ \______/ 
+                                                                                       
+                                                                                       
+                                                                                       
+*****************************/
+
+#gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#gallery li {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    background: #99CCFF;
+    color: #b2dcea;
+}
+
+#gallery li a p {
+    margin: 0;
+    padding: 5%;
+    font-size: 0.85em;
+    color: #29798e;
+    height: 2.0em;
+}
+
+
+/****************************
+ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$$$$$$$ /$$$$$$$$ /$$$$$$$ 
+| $$_____//$$__  $$ /$$__  $$|__  $$__/| $$_____/| $$__  $$
+| $$     | $$  \ $$| $$  \ $$   | $$   | $$      | $$  \ $$
+| $$$$$  | $$  | $$| $$  | $$   | $$   | $$$$$   | $$$$$$$/
+| $$__/  | $$  | $$| $$  | $$   | $$   | $$__/   | $$__  $$
+| $$     | $$  | $$| $$  | $$   | $$   | $$      | $$  \ $$
+| $$     |  $$$$$$/|  $$$$$$/   | $$   | $$$$$$$$| $$  | $$
+|__/      \______/  \______/    |__/   |________/|__/  |__/
+                                                           
+                                                           
+                                                           
+*****************************/
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    clear: both;
+    padding-top: 50px; 
+    color: #ccc;
+    
+}
+
+.social-icon {
+    width: 20px;
+    
+}
+
+.testfooter {
+    background-color: rgba(26, 78, 77, 0.67);
+    border-radius: 10%;
+}
+
+
+/****************************
+  /$$$$$$  /$$$$$$$   /$$$$$$  /$$   /$$ /$$$$$$$$
+ /$$__  $$| $$__  $$ /$$__  $$| $$  | $$|__  $$__/
+| $$  \ $$| $$  \ $$| $$  \ $$| $$  | $$   | $$   
+| $$$$$$$$| $$$$$$$ | $$  | $$| $$  | $$   | $$   
+| $$__  $$| $$__  $$| $$  | $$| $$  | $$   | $$   
+| $$  | $$| $$  \ $$| $$  | $$| $$  | $$   | $$   
+| $$  | $$| $$$$$$$/|  $$$$$$/|  $$$$$$/   | $$   
+|__/  |__/|_______/  \______/  \______/    |__/   
+                                                  
+                                                  
+                                                  
+*****************************/
+
+.profile-photo {
+    clear: both;
+    display: block;
+    max-width: 150px;
+    margin: 0 auto 30px;
+    border-radius: 100%;
+    
+}
+
+
+
+/****************************
+  /$$$$$$   /$$$$$$  /$$   /$$ /$$$$$$$$ /$$$$$$   /$$$$$$  /$$$$$$$$
+ /$$__  $$ /$$__  $$| $$$ | $$|__  $$__//$$__  $$ /$$__  $$|__  $$__/
+| $$  \__/| $$  \ $$| $$$$| $$   | $$  | $$  \ $$| $$  \__/   | $$   
+| $$      | $$  | $$| $$ $$ $$   | $$  | $$$$$$$$| $$         | $$   
+| $$      | $$  | $$| $$  $$$$   | $$  | $$__  $$| $$         | $$   
+| $$    $$| $$  | $$| $$\  $$$   | $$  | $$  | $$| $$    $$   | $$   
+|  $$$$$$/|  $$$$$$/| $$ \  $$   | $$  | $$  | $$|  $$$$$$/   | $$   
+ \______/  \______/ |__/  \__/   |__/  |__/  |__/ \______/    |__/   
+                                                                     
+                                                                     
+                                                                     
+*****************************/
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: .9em;
+    
+}
+
+.contact-info a {
+    display:block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+    background-image: url('../img/phone.png')
+}
+
+.contact-info li.mail a {
+    background-image: url('../img/mail.png')
+}
+
+.contact-info li.twitter a {
+    background-image: url('../img/twitter.png')
+}
+
+/****************************
+  /$$$$$$   /$$$$$$  /$$        /$$$$$$  /$$$$$$$   /$$$$$$        /$$$$$$$$ /$$$$$$$$ /$$$$$$ 
+ /$$__  $$ /$$__  $$| $$       /$$__  $$| $$__  $$ /$$__  $$      | $$_____/|__  $$__//$$__  $$
+| $$  \__/| $$  \ $$| $$      | $$  \ $$| $$  \ $$| $$  \__/      | $$         | $$  | $$  \__/
+| $$      | $$  | $$| $$      | $$  | $$| $$$$$$$/|  $$$$$$       | $$$$$      | $$  | $$      
+| $$      | $$  | $$| $$      | $$  | $$| $$__  $$ \____  $$      | $$__/      | $$  | $$      
+| $$    $$| $$  | $$| $$      | $$  | $$| $$  \ $$ /$$  \ $$      | $$         | $$  | $$    $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$$|  $$$$$$/| $$  | $$|  $$$$$$/      | $$$$$$$$   | $$  |  $$$$$$/
+ \______/  \______/ |________/ \______/ |__/  |__/ \______/       |________/   |__/   \______/ 
+                                                                                               
+                                                                                               
+                                                                                               
+*****************************/
+
+/* site body */
+body {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* green header */
+header {
+    background: rgba(0, 0, 0, 0);
+    border-color: #0d3531;
+}
+
+
+
+
+
+/* logo text */
+h1, h2, h3 {
+    color: #0d3a40;
+    text-shadow: -1px 1px 3px #5cc0ff, 1px -1px 8px #52ff66;
+    text-align: center;
+}
+
+/* nav links */
+a {
+    color:#6ab47b;
+}
+.colImgcap {
+    color: #0d3100;
+}
+
+/* nav links*/
+nav a, nav a:visited {
+    color: #67b2bf;
+
+}
+
+/* selected nav link and hover */
+nav a.selected, nav a:hover {
+    color: #32673f;
+}
+
+.col2ndcap {
+    color:black;
+
+     
+}
+
+.sliderHeading{
+    background-color: rgba(73, 170, 144, 0.56);
+    text-align: center;
+    border-radius: 5px 5px 0 0 ;
+    font-weight: 700;
+    color: #0d3a40;
+}
+
+
+
+/*
+
+ /$$$$$$$$ /$$   /$$ /$$$$$$$$ /$$$$$$$  /$$     /$$       /$$$$$$$$ /$$$$$$  /$$$$$$$  /$$      /$$
+| $$_____/| $$$ | $$|__  $$__/| $$__  $$|  $$   /$$/      | $$_____//$$__  $$| $$__  $$| $$$    /$$$
+| $$      | $$$$| $$   | $$   | $$  \ $$ \  $$ /$$/       | $$     | $$  \ $$| $$  \ $$| $$$$  /$$$$
+| $$$$$   | $$ $$ $$   | $$   | $$$$$$$/  \  $$$$/        | $$$$$  | $$  | $$| $$$$$$$/| $$ $$/$$ $$
+| $$__/   | $$  $$$$   | $$   | $$__  $$   \  $$/         | $$__/  | $$  | $$| $$__  $$| $$  $$$| $$
+| $$      | $$\  $$$   | $$   | $$  \ $$    | $$          | $$     | $$  | $$| $$  \ $$| $$\  $ | $$
+| $$$$$$$$| $$ \  $$   | $$   | $$  | $$    | $$          | $$     |  $$$$$$/| $$  | $$| $$ \/  | $$
+|________/|__/  \__/   |__/   |__/  |__/    |__/          |__/      \______/ |__/  |__/|__/     |__/
+
+
+*/
+
+#form span {
+		border-radius: 20px;
+		margin-left:15px;
+		padding: 8px 35px;
+		background: #faf3bc;
+		color:#420600;
+	}
+	#form span.valid {
+		background-color :#c0ce51;
+		color: #faf3bc;
+	}
+	#form span.error {
+		background-color:#b0240f;
+		color: #faf3bc;
+    }
+.grid_12 { width: 100%; }
+
+.omega{margin-right:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+.wine-thumb {
+    height:50px;
+    width:50px;
+    float:left;
+    padding:2px;
+}
+
+a {
+    border-radius: 18px;
+    
+}
+
+
+.list-group-item {
+    background-color: #893c3c;
+    border: 2px solid #330606;
+}
+
+.list-group {
+    background-color: rgb(103, 103, 103);
+}
+
+.list-group-item-text {
+    color:white;
+}
+
+.modal-body {
+    background-color: #e68484;
+}
+
+.modal-header {
+        background-color: #a33d3d;
+}
+
+a.list-group-item .list-group-item-heading {
+color: black;
+}
+
+h4 {
+    color:black;
+}
+
+button {
+    float:right;
+    
+    margin-right: 20px;
+    
+}
+
+p {
+    margin:30px;
+    
+}
+
+
+
+hr {
+    margin:0;
+    width:80%;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -165,9 +165,7 @@ hr {
     border-radius: 10px;
 }
 
-.desctext::before, .desctext::after {
-    content: url("../img/optimized/resume-icon.png");
-}
+
 
 .desctext {
     color:#003D00;
@@ -561,8 +559,12 @@ footer {
     
 }
 
+.resume-icon {
+    width:25px;
+}
+
 .social-icon {
-    width: 20px;
+    width: 40px;
     
 }
 

@@ -3,7 +3,7 @@ $(document).ready(function() {
     animationHover('#animex', 'swing');
     animationHover('#animex2', 'rotateIn');             
     animationHover('#animex3', 'lightSpeedIn');
-    animationHover('#animexlogo', 'pulse');
+    animationHover('#animexlogo', 'rubberBand');
     function animationHover(element, animation){
       element = $(element);
       element.hover(

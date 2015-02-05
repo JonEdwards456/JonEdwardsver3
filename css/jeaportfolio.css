@@ -265,6 +265,13 @@ li {
 
 }
 
+.smallColumn {
+    min-height: 150px;
+}
+
+.colSideText {
+    display:inline-block;
+}
 
 /*
 
@@ -281,6 +288,7 @@ li {
                                                                     
 
 /*NEW SPOLIER STYLES*/
+/*
 button {
   background: #dae1e4;
   border: none;
@@ -309,6 +317,7 @@ button {
 .newbutton span {
   color: #dae1e4;
 }
+*/
 
 
 /****************************
@@ -474,7 +483,7 @@ h1 {
     padding:10px;
     margin:auto;
     background: rgb(8, 42, 67);
-    width: 100%;
+    width: 35%;
     border-radius: 25px;
     height:2em;
 /*    margin-right: 5px;*/
@@ -658,6 +667,16 @@ footer {
     background-image: url('../img/twitter.png')
 }
 
+.contactContainer {
+        background-color: rgba(51, 204, 139, 0.38);
+    
+    
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
 /****************************
   /$$$$$$   /$$$$$$  /$$        /$$$$$$  /$$$$$$$   /$$$$$$        /$$$$$$$$ /$$$$$$$$ /$$$$$$ 
  /$$__  $$ /$$__  $$| $$       /$$__  $$| $$__  $$ /$$__  $$      | $$_____/|__  $$__//$$__  $$
@@ -746,10 +765,12 @@ h1 a, h1 a:visited, h1 a:hover, h1 a:active {
 
 #form span {
 		border-radius: 20px;
-		margin-left:15px;
-		padding: 8px 35px;
-		background: #faf3bc;
+		margin:auto;
+		padding: 5px;
+		background: rgba(191, 129, 12, 0.58);
 		color:#420600;
+    display:block;
+   
 	}
 	#form span.valid {
 		background-color :#c0ce51;
@@ -759,10 +780,45 @@ h1 a, h1 a:visited, h1 a:hover, h1 a:active {
 		background-color:#b0240f;
 		color: #faf3bc;
     }
-.grid_12 { width: 100%; }
 
-.omega{margin-right:0;}
+/*
 
+
+ .oOOOo.   .oOOOo.  o.OOOo.   ooOoOOo o.     O  .oOOOo.  
+.O     o  .O     o.  O    `o     O    Oo     o .O     o  
+o         O       o  o      O    o    O O    O o         
+o         o       O  O      o    O    O  o   o O         
+o         O       o  o      O    o    O   o  O O   .oOOo 
+O         o       O  O      o    O    o    O O o.      O 
+`o     .o `o     O'  o    .O'    O    o     Oo  O.    oO 
+ `OoooO'   `OoooO'   OooOO'   ooOOoOo O     `o   `OooO'  
+                                                         
+                                                         
+*/
+
+button {
+    background: #317d9d;
+  border: none;
+  border-radius: 5px;
+  color: #1d3c6a;
+     padding: 5px 0;
+    outline: none;
+  cursor: pointer;
+    font-size: 15px;
+
+  width: 60px;
+  margin: 0 10px 0 10px;
+}
+
+label {
+    text-shadow:  -1px 1px 3px #5cc0ff, 1px -1px 8px #52ff66;
+}
+
+/*
+#toDoContainer {
+    max-width: 50%;
+}
+*/
 
 
 

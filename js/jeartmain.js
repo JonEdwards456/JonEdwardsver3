@@ -1,3 +1,5 @@
+// ANIMATE.CSS HOVER OR CLICK CODE, ADD ELEMENT AND ID TO LIST BELOW
+
 $(document).ready(function() {
     
     animationHover('#animex', 'swing');
@@ -223,7 +225,9 @@ $(document).ready(function() {
         };
     
 
+//MAIN FUNCTION ACTIVATE ORIGIANALLY IN HTML PAGE
 
  jssor_slider1_starter('slider1_container');
+
 
 

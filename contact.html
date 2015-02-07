@@ -45,24 +45,25 @@
   </div>
     <div id ="wrapper">
 
-
+<!--FIRST COLUMN-->
             <section id="primary">
-                <h3>Contact Details</h3>
-                <ul class="contact-info">
-                    <li class= "phone"><a href = "tel:555-6425">555-6425</a></li>    
-                    <li class="mail"><a href = "mailto:jon.edwards456@gmail.com">jon.test@gmail.com</a></li>
-                    <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=psychicsenator">@psychicsenator</a></li>
-                </ul>
+                <h3>Twitter Feed</h3>
+                
             </section>
         
+<!--SECOND COLUMN           -->
+           
             <section id="secondary">
-                <h3>General Information</h3>
-                <p> Currently looking for design work!
-                    Please contact me with any questions.
-                    Email: jon.test@gmail.com.</p>
-                    
+                                    
                     <div id="form" class="contactContainer">
 			<h2>Contact Form</h2>
+			<hr>
+			<h3>General Information</h3>
+                <p> Currently looking for design work!
+                    Please contact me with any questions. Use this form or my e-mail address is:
+                    </p>
+                        <h3><a href = "mailto:jon.edwards456@gmail.com">jon.edwards456@gmail.com</a></h3>
+                        <hr>
 			<form action="contact.php" method="post">
 
 				<p>
@@ -82,7 +83,11 @@
 					<input name="subject" id="subject" type="text"> 
 					<span>Please enter your subject</span>
 				</p>
-
+				
+	<br>			
+<hr>
+        <br>    
+            
 				<p>
 					<label for="message">Message</label>
 					<textarea name="message" id="message" class="required"></textarea> 
@@ -101,12 +106,12 @@
                 <p>Use twitter to catch me anytime! Facebook and email work also!</p>
                 </div>
             </section>
-    
+<!--    THIRD COLUMN-->
            <section id="tertiary">
                 <h3>Contact Details</h3>
                 <ul class="contact-info">
-                    <li class= "phone"><a href = "tel:555-6425">555-6425</a></li>    
-                    <li class="mail"><a href = "mailto:jon.edwards456@gmail.com">jon.test@gmail.com</a></li>
+                    
+                    <li class="mail"></li>
                     <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=psychicsenator">@psychicsenator</a></li>
                 </ul>
             </section>
@@ -159,8 +164,8 @@
 					$submit.removeAttr("disabled");
 			}
 
-			$("#form span").hide();
-			$("input,textarea").focus(function(){
+			//$("#form span").hide(); //hide all hints
+			$("input,textarea").focus(function(){  
 				$(this).next().fadeIn("slow");
 			}).blur(function(){
 				$(this).next().fadeOut("slow");

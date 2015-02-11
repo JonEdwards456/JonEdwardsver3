@@ -164,7 +164,7 @@ page : about
 .profile-photo {
     
     float: left;
-    margin: 0 5% 80px 0;
+    margin:25px;
 }
 
 .col2ndcap {
@@ -172,13 +172,13 @@ page : about
     width:27%;
     
     margin-left: 10px;
-    }
+}
 
-    .col2ndcap {
-        font-size: .63em;
-        text-align: center;
+.col2ndcap {
+    font-size: .63em;
+    text-align: center;
         
-    }
+}
 
 
 

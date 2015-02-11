@@ -6,7 +6,8 @@ $(document).ready(function() {
     animationHover('#animex2', 'rotateIn');             
     animationHover('#animex3', 'lightSpeedIn');
     animationHover('#animexlogo', 'rubberBand');
-    function animationHover(element, animation){
+    
+    function animationHover(element, animation) {
       element = $(element);
       element.hover(
         function() {
@@ -16,7 +17,7 @@ $(document).ready(function() {
           //wait for animation to finish before removing classes
           window.setTimeout( function(){
             element.removeClass('animated ' + animation);
-          }, 2000);
+          }, 1000);
         }
       );
     };

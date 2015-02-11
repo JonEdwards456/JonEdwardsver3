@@ -27,3 +27,120 @@ h1 {
 <iframe src="cssslider.html" style="width:800px;height:600px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:table-cell;" marginheight="0" marginwidth="0"></iframe>
 <!-- End cssSlider.com -->
     
+    
+    
+   ************************** CODE FOR BUTTONS HTML SHOW HIDE ELEMENT
+    
+    <!-- Show hide caption img button -->
+                 <li class="colImg">                                          
+                      <div id="buttonContainer">
+	                      <button>
+	                      	<img src="img/thumbs/fruit%20thumb.jpg"  id="animex" class = "colImglink" alt="">
+	                      </button>
+                      </div>
+                      <div id="buttonContainer2">
+                      		<button>
+                      		<p class="colImgcap" id="bannerMessage">Fruitendence</p>
+                      		</button>
+                      </div>
+                </li>
+                
+                
+   ******************************************             
+                
+                <!-- 
+
+
+ /$$$$$$$  /$$   /$$ /$$$$$$$$/$$$$$$$$/$$$$$$  /$$   /$$  /$$$$$$ 
+| $$__  $$| $$  | $$|__  $$__/__  $$__/$$__  $$| $$$ | $$ /$$__  $$
+| $$  \ $$| $$  | $$   | $$     | $$ | $$  \ $$| $$$$| $$| $$  \__/
+| $$$$$$$ | $$  | $$   | $$     | $$ | $$  | $$| $$ $$ $$|  $$$$$$ 
+| $$__  $$| $$  | $$   | $$     | $$ | $$  | $$| $$  $$$$ \____  $$
+| $$  \ $$| $$  | $$   | $$     | $$ | $$  | $$| $$\  $$$ /$$  \ $$
+| $$$$$$$/|  $$$$$$/   | $$     | $$ |  $$$$$$/| $$ \  $$|  $$$$$$/
+|_______/  \______/    |__/     |__/  \______/ |__/  \__/ \______/ 
+  -->
+
+
+
+ 
+
+
+      <div id="buttonContainer">
+          <button>Push to show</button>
+      </div>
+      
+       
+      <div id="buttonContainer2">
+          <button>Push to hide</button>
+      </div>
+           
+           
+           
+       <div id="buttonContainer">
+          <button>Push to download resume</button>
+      </div>
+      
+       
+      <div id="buttonContainer2">
+          <button>Push to show file library</button>
+      </div>   
+                                     
+      <div id="buttonContainer2">
+          <button>Push to launch web app</button>
+      </div>     
+      
+      
+      *************************************
+      
+      
+      
+      
+      
+      /* animated border radius test next 3 comments
+#myDIV {
+    background: rgba(81, 175, 173, 0.67);
+    
+    
+    margin: auto;
+    margin-top: 15px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    -webkit-animation: mymove 2s infinite;  Chrome, Safari, Opera 
+    animation: mymove 2s infinite;
+}
+*/
+
+/* Chrome, Safari, Opera */
+/*
+@-webkit-keyframes mymove {
+    50% {border-radius: 50px;}
+}
+*/
+
+/* Standard syntax */
+/*
+@keyframes mymove {
+    50% {border-radius: 50px;}
+}
+*/
+
+
+********************************************
+
+/*
+#animex {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+    
+    -moz-animation-duration: 3s;
+  -moz-animation-delay: 2s;
+  -moz-animation-iteration-count: infinite;
+    
+    -o-animation-duration: 3s;
+  -o-animation-delay: 2s;
+  -o-animation-iteration-count: infinite;
+}
+*/

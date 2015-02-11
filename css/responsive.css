@@ -355,7 +355,7 @@ page : about
         
        .navdiv ul {
             position:absolute;
-            right:0;
+            right:0px;
             bottom: 2px;
             margin: auto;
             display: inline-block;

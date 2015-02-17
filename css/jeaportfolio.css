@@ -31,7 +31,7 @@ body{
 }
 
 html { 
-  background: url(../img/background%20vivid%20light.jpg) no-repeat center center fixed; 
+  background: url(../img/backgroundVividLightOPT.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -138,7 +138,7 @@ hr {
 
 
 .desctext {
-    color:#003D00;
+    
     text-align: center;
 }
 
@@ -172,8 +172,41 @@ li {
 */
 
 .hideButtonContainer {
-    float:right;
+    display: inline-block;
+    
 }
+
+.hideButton {
+    display:inline-block;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+    cursor: pointer;
+    font-size: 15px;
+    width: 40px;
+    margin: 0 10px 0 10px;
+}
+
+.showButton {
+    display: inline-block;
+    background: #45b41c;
+    border: none;
+    border-radius: 5px;
+    color: #1d3c6a;
+    padding: 5px 0;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100px;
+    margin: 0 10px 0 10px;
+    
+}
+
+
+.showButtonContainer {
+    display: inline-block;
+}
+
 
 
 
@@ -527,17 +560,15 @@ h1 {
     margin: 0;
     padding: 5%;
     font-size: 0.85em;
-    color: #29798e;
+    color: #0c2b33;
     height: 2.0em;
 }
 
-.closeGalleryButton, .galleryHeading {
+ .galleryHeading {
     display: inline-block;
 }
 
-.closeGalleryButton {
-    vertical-align: middle;
-}
+
 /****************************
  /$$$$$$$$ /$$$$$$   /$$$$$$  /$$$$$$$$ /$$$$$$$$ /$$$$$$$ 
 | $$_____//$$__  $$ /$$__  $$|__  $$__/| $$_____/| $$__  $$
@@ -573,6 +604,10 @@ footer {
 .testfooter {
     background-color: rgba(26, 78, 77, 0.67);
     border-radius: 10%;
+}
+
+.sitemapLink {
+    color: #87ff87;
 }
 
 
@@ -684,8 +719,8 @@ header {
 
 
 /* logo text */
-h1, h2, h3 {
-    color: #0d3a40;
+h1, h2, h3, .desctext {
+    color: #05181a;
     text-shadow: -1px 1px 3px #5cc0ff, 1px -1px 8px #52ff66;
     text-align: center;
 }
@@ -700,7 +735,7 @@ h1 a, h1 a:visited, h1 a:hover, h1 a:active {
     
 }
 .colImgcap {
-    color: #0d3100;
+    color: #081d00;
 }
 
 
@@ -721,7 +756,7 @@ h1 a, h1 a:visited, h1 a:hover, h1 a:active {
     text-align: center;
     border-radius: 5px 5px 0 0 ;
     font-weight: 700;
-    color: #0d3a40;
+    color: #081d00;
     margin: 0;
 }
 
@@ -790,7 +825,7 @@ O         o       O  O      o    O    o    O O o.      O
                                                          
 */
 
-button {
+.buttonTodo {
     background: #317d9d;
     border: none;
     border-radius: 5px;
@@ -811,6 +846,7 @@ label {
     max-width: 50%;
 }
 */
+/*
 # animexlogo {
 -webkit-animation-duration: 10s;
           animation-duration: 10s;
@@ -819,6 +855,7 @@ label {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
+*/
 
 
 

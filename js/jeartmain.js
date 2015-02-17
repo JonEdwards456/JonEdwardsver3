@@ -2,10 +2,10 @@
 
 $(document).ready(function() {
     
-    animationHover('#animex', 'swing');
-    animationHover('#animex2', 'rotateIn');             
-    animationHover('#animex3', 'lightSpeedIn');
-    animationHover('#animexlogo', 'rubberBand');
+    animationHover('.animex', 'swing');
+    animationHover('.animex2', 'rotateIn');             
+    animationHover('.animex3', 'lightSpeedIn');
+    animationHover('.animexlogo', 'rubberBand');
     
     function animationHover(element, animation) {
       element = $(element);

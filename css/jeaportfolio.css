@@ -27,7 +27,7 @@ body{
     width: 100%;
     margin: auto;
     font-weight: 700;
-    padding-bottom: 100px;
+    
     box-sizing: content-box;
 
 }
@@ -179,7 +179,7 @@ li {
 .webShowButtonContainer, .designShowButtonContainer, .illusShowButtonContainer, .webHideButtonContainer, .designHideButtonContainer, .illusHideButtonContainer{
     display: inline-block;
     text-align: center;
-    width: auto;
+/*    width: auto;*/
     
 }
 
@@ -286,12 +286,12 @@ li {
 
 .slotRect {
    position: absolute;
-width: 20%;
-margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 /*background: url(../img/slotted-rectangle.png) no-repeat;*/
-    height: 50%;
+    height: 10%;
     left: 50px;
-    top: 50px;
+    top: 20px;
 }
 
 /*
@@ -627,12 +627,12 @@ footer {
 }
 
 .testfooter {
-    background-color: rgb(26, 78, 77);
+/*    background-color: rgb(26, 78, 77);*/
     height: 10%;
-    position:fixed;
+    
     width: 100%;
     bottom: 0;
-    z-index: 100;
+    
     margin: auto;
     margin-top: 15px;
 }
@@ -641,10 +641,7 @@ footer {
     color: #87ff87;
 }
 
-.wave {
-    display:inline-block;
-    width: 75px;
-}
+
 .footerCont {
     margin-top: 15px;
 }    
@@ -880,6 +877,10 @@ label {
     text-shadow:  -1px 1px 3px #5cc0ff, 1px -1px 8px #52ff66;
 }
 
+.wave {
+    display:inline-block;
+    width: 75px;
+}
 /*
 #toDoContainer {
     max-width: 50%;

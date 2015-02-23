@@ -257,25 +257,22 @@ page : about
 .pagedesc {
     max-width: 50%;
 }
+      
+    .slotRect {
+        width:40%;
+    }
     
-   
-
     .textlogo {
     margin:auto;
-    
-    
     padding:15px;
     display: inline-block;
     
 }
-
-
-
+    
 /* remove below to get to stack, try to use img at correct size to prevent need for responsive so can remove below rule to center at small size */
 .jelogomain {
-       height: 100px;
-        width: 100px;
-    
+     height: 100px;
+     width: 100px;
     background:none;  
     padding: 10px; 
     display: inline-block;
@@ -283,40 +280,36 @@ page : about
     right:10px;
     top:10px;
     
-    }
+}
 
   .navdiv ul li {
-       
-         list-style: none;
-        
+       list-style: none;
         padding:5px;
         margin-left: 5px;
-        
         border-radius: 25px;
         display: inline-block;
-    }
-    
+}
         
     
     h1 {
         font-size: 3em;
-    }
-    
-    
+}
+        
     .textlogo h2 {
         margin-bottom: 20px;
-    }
+}
     
     header {
 /*        border-bottom: 5px solid #599a68;*/
         margin-bottom: 0px;
-        
-    }
+  }
     
+/*
     body {
         background: rgba(0, 0, 0, 0);
         
     }
+*/
     
     
 
@@ -334,9 +327,9 @@ page : about
                                                                            
                                                                            
                         */                                                   
-    @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 
-        .jelogomain {
+.jelogomain {
        
     
     background:none;  
@@ -347,13 +340,16 @@ page : about
     top:5px;
     
     }
-     .pagedesc {
+.pagedesc {
          max-width: 40%;
      }
 
+.landDesc {
+    max-width: 70%;
+}
         
         
-       .navdiv ul {
+.navdiv ul {
             position:absolute;
             right:0px;
             bottom: 2px;
@@ -361,7 +357,7 @@ page : about
             display: inline-block;
         }
 
-    #wrapper {
+#wrapper {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 5%;
@@ -398,6 +394,10 @@ page : about
         h1 {
             font-size: 7em;
         }
+        .slotRect {
+            width:65%;
+            height: 25%;
+        }
         .textlogo {
             width:75%;
         }
@@ -424,6 +424,10 @@ page : about
             font-size: 9em;
             display: block;
             text-align: left;
+            margin-left: 20px;
+        }
+        .slotRect {
+            left:20px;
         }
         .textlogo {
             width:100%;

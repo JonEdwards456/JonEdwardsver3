@@ -40,22 +40,48 @@ $(document).ready(function() {
 });
 
 
-//SCRIPTS TO SHOW AND HIDE AN HTML ELEMENT
+//SCRIPTS TO SHOW AND HIDE AN HTML ELEMENT Portfolio page
 
-var hiddenBox = $( ".slideToggle" );
+var hiddenBox = $( ".slideToggleDesign" );
+var webHiddenBox = $(".slideToggleWeb");
+var illusHiddenBox = $(".slideToggleIllus");
 
-$( ".showButtonContainer button" ).on( "click", function( event ) {
+//Hide all toggle elements
+$( ".slideToggleDesign,.slideToggleWeb, .slideToggleIllus,.illusHideButtonContainer,.designHideButtonContainer,.webHideButtonContainer" ).hide();
+
+
+//design gallery show/hide functions
+$( ".designShowButtonContainer button" ).on( "click", function( event ) {
   hiddenBox.slideDown("slow");
-    $ (".hideButtonContainer").slideDown("slow");
+    $ (".designHideButtonContainer").slideDown("slow");
     
 });
-
-
-$( ".hideButtonContainer button" ).on( "click", function( event ) {
+$( ".designHideButtonContainer button" ).on( "click", function( event ) {
   hiddenBox.slideUp("slow");
-    $ (".hideButtonContainer").slideUp("slow");
+    $ (".designHideButtonContainer").slideUp("slow");
 });
 
+//web gallery show/hide functions
+$( ".webShowButtonContainer button" ).on( "click", function( event ) {
+  webHiddenBox.slideDown("slow");
+    $ (".webHideButtonContainer").slideDown("slow");
+    
+});
+$( ".webHideButtonContainer button" ).on( "click", function( event ) {
+  webHiddenBox.slideUp("slow");
+    $ (".webHideButtonContainer").slideUp("slow");
+});
+
+//Illustration gallery show/hide functions
+$( ".illusShowButtonContainer button" ).on( "click", function( event ) {
+  illusHiddenBox.slideDown("slow");
+    $ (".illusHideButtonContainer").slideDown("slow");
+    
+});
+$( ".illusHideButtonContainer button" ).on( "click", function( event ) {
+  illusHiddenBox.slideUp("slow");
+    $ (".illusHideButtonContainer").slideUp("slow");
+});
 
 //var hiddenBox = $( "#bannerMessage" );
 //$( "#buttonContainer button" ).on( "click", function( event ) {

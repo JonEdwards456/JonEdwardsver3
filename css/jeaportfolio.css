@@ -27,11 +27,14 @@ body{
     width: 100%;
     margin: auto;
     font-weight: 700;
+    padding-bottom: 100px;
+    box-sizing: content-box;
 
 }
 
-html { 
-  background: url(../img/backgroundVividLightOPT.jpg) no-repeat center center fixed; 
+/* ***************************************************  SET THE BACKGROUND IMAGE*/
+html {     
+  background: url(../img/optimized/bubblesWallpaper0.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -46,7 +49,7 @@ body,
 #wrapper,
 .header
  {
-    height: 100%;
+    height: auto%;
 }
 
 #home .home, #portfolio .portfolio, #about .about, #contact .contact, #coding .coding, #fineArts .fineArts
@@ -123,6 +126,8 @@ hr {
     max-width: 1024px;
     margin: 0 auto;
     padding: 0;
+    
+    
 }
 
 .pagedesc {
@@ -171,8 +176,10 @@ li {
                                     
 */
 
-.hideButtonContainer {
+.webShowButtonContainer, .designShowButtonContainer, .illusShowButtonContainer, .webHideButtonContainer, .designHideButtonContainer, .illusHideButtonContainer{
     display: inline-block;
+    text-align: center;
+    width: auto;
     
 }
 
@@ -189,7 +196,7 @@ li {
 }
 
 .showButton {
-    display: inline-block;
+    
     background: #45b41c;
     border: none;
     border-radius: 5px;
@@ -262,7 +269,7 @@ li {
 }
 
 .colEntry {
-    background: rgba(81, 175, 173, 0.67);
+    background: #51afad;
     border-radius: 5%;
     margin-top: 15px;
     
@@ -275,6 +282,16 @@ li {
 
 .colSideText {
     display:inline-block;
+}
+
+.slotRect {
+   position: absolute;
+width: 20%;
+margin: 0 auto;
+/*background: url(../img/slotted-rectangle.png) no-repeat;*/
+    height: 50%;
+    left: 50px;
+    top: 50px;
 }
 
 /*
@@ -455,10 +472,12 @@ h1 {
 *****************************/
 
 .navdiv {
-    text-align:  center;
+    
     padding: 10px 0;
     margin: 20px 0 0;
     padding-bottom: 10px;
+    
+    text-align:  center;
 }
 
 .navdiv ul {
@@ -568,6 +587,12 @@ h1 {
     display: inline-block;
 }
 
+/*
+.slideToggleWeb,.slideToggleDesign, .slideToggleIllus {
+        display:none;
+}
+*/
+
 
 /****************************
  /$$$$$$$$ /$$$$$$   /$$$$$$  /$$$$$$$$ /$$$$$$$$ /$$$$$$$ 
@@ -587,7 +612,7 @@ footer {
     font-size: 0.75em;
     text-align: center;
     clear: both;
-    padding-top: 50px; 
+   
     color: #ccc;
     
 }
@@ -602,14 +627,28 @@ footer {
 }
 
 .testfooter {
-    background-color: rgba(26, 78, 77, 0.67);
-    border-radius: 10%;
+    background-color: rgb(26, 78, 77);
+    height: 10%;
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 100;
+    margin: auto;
+    margin-top: 15px;
 }
 
 .sitemapLink {
     color: #87ff87;
 }
 
+.wave {
+    display:inline-block;
+    width: 75px;
+}
+.footerCont {
+    margin-top: 15px;
+}    
+    
 
 /****************************
   /$$$$$$  /$$$$$$$   /$$$$$$  /$$   /$$ /$$$$$$$$

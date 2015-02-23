@@ -1,12 +1,6 @@
 JonEdwardsArtDotCom
 ============
 
-I have been working on another project on cratejoy.com, please follow this link to view my store! 
-https://designsbyjonedwards.cratejoy.com/
-
-I added some animated effects using animate.css and a little Javascript! Please hover over the various header elements such as the logo, buttons, or the h1 element to see!
-
-
 My new hand coded responsive website, go to this link to preview. 
 
 http://htmlpreview.github.io/?https://github.com/JonEdwards456/JonEdwardsver3/blob/master/index.html

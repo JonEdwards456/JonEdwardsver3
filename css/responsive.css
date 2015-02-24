@@ -72,7 +72,6 @@
         text-align: left;
             }
     #secondary {
-        
         width: 40%;
         float: left;
         text-align: center;
@@ -83,45 +82,31 @@
         float:left;
         text-align: center;
     }
-    
   
-    
-    
     .navdiv {
        background: none;
         font-size: 15px;
-       
-    }
+     }
    .navdiv {
      margin: auto;
-    
-    
     }
     .navdiv ul {
-    
     overflow:  hidden;
     padding-left: 20px;
     text-align: center;
     }
    .navdiv ul li {
-       
-
         list-style: none;
-
         padding:5px;
         margin-left: 5px;
         width:auto;
         border-radius: 5px;
         display: inline-block;
-        
-    }
+     }
     
     .jelogomain {
         max-width: 100%;
-       
-        
-        
-    }
+      }
     
 /*
     header {
@@ -133,8 +118,6 @@
         display: block;
         width: 50%;
         white-space: nowrap;
-        
-        
     }
 /****************************
 formula 3 column layout --- 

@@ -639,6 +639,8 @@ footer {
 
 .sitemapLink {
     color: #87ff87;
+    text-decoration: underline;
+    margin-right: 10px;
 }
 
 
@@ -881,6 +883,12 @@ label {
     display:inline-block;
     width: 75px;
 }
+
+.imgShrink {
+    width: 75px;
+    
+}
+
 /*
 #toDoContainer {
     max-width: 50%;

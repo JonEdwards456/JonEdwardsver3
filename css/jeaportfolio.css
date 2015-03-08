@@ -175,7 +175,7 @@ li {
                                     
 */
 
-.webShowButtonContainer, .designShowButtonContainer, .illusShowButtonContainer, .webHideButtonContainer, .designHideButtonContainer, .illusHideButtonContainer{
+.galButton {
     display: inline-block;
     text-align: center;
 /*    width: auto;*/

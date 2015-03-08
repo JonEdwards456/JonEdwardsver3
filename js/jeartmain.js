@@ -45,9 +45,10 @@ $(document).ready(function() {
 var hiddenBox = $( ".slideToggleDesign" );
 var webHiddenBox = $(".slideToggleWeb");
 var illusHiddenBox = $(".slideToggleIllus");
+var vidsHiddenBox = $(".slideToggleVids")
 
 //Hide all toggle elements
-$( ".slideToggleDesign,.slideToggleWeb, .slideToggleIllus,.illusHideButtonContainer,.designHideButtonContainer,.webHideButtonContainer" ).hide();
+$( ".slideToggleDesign,.slideToggleWeb, .slideToggleIllus,.illusHideButtonContainer,.designHideButtonContainer,.webHideButtonContainer, .slideToggleVids, .vidsHideButtonContainer" ).hide();
 
 
 //design gallery show/hide functions
@@ -81,6 +82,17 @@ $( ".illusShowButtonContainer button" ).on( "click", function( event ) {
 $( ".illusHideButtonContainer button" ).on( "click", function( event ) {
   illusHiddenBox.slideUp("slow");
     $ (".illusHideButtonContainer").slideUp("slow");
+});
+
+//Videos gallery show/hide functions
+$( ".vidsShowButtonContainer button" ).on( "click", function( event ) {
+  vidsHiddenBox.slideDown("slow");
+    $ (".vidsHideButtonContainer").slideDown("slow");
+    
+});
+$( ".vidsHideButtonContainer button" ).on( "click", function( event ) {
+  vidsHiddenBox.slideUp("slow");
+    $ (".vidsHideButtonContainer").slideUp("slow");
 });
 
 //var hiddenBox = $( "#bannerMessage" );

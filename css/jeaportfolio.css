@@ -27,8 +27,7 @@ body{
     width: 100%;
     margin: auto;
     font-weight: 700;
-    
-    box-sizing: content-box;
+   
 
 }
 
@@ -49,7 +48,7 @@ body,
 #wrapper,
 .header
  {
-    height: auto%;
+    height: auto;
 }
 
 #home .home, #portfolio .portfolio, #about .about, #contact .contact, #coding .coding, #fineArts .fineArts
@@ -635,6 +634,7 @@ footer {
     
     margin: auto;
     margin-top: 15px;
+    
 }
 
 .sitemapLink {

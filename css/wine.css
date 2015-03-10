@@ -41,7 +41,7 @@ h4 {
 }
 
 button {
-    float:right;
+    
     
     margin-right: 20px;
     
@@ -60,7 +60,24 @@ hr {
     background-color: black;
 }
 
+.jumbotron {
+    background: url(../wine/wineImg/wine%20jumbotron%20back2.jpg); 
+  
+   background-repeat:no-repeat;
+    
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
 
+.mainLink {
+    min-height: 300px;
+}
+
+.wineBut {    
+    display: block;
+}
 
 
 

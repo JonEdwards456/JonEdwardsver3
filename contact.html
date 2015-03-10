@@ -47,7 +47,7 @@
   </div>
     <div id ="wrapper">
 
-<!--FIRST COLUMN-->
+<!--FIRST COLUMN:Twitter Feed-->
             <section id="primary">
                 <h3>Twitter Feed</h3>
                 <a class="twitter-timeline" href="https://twitter.com/psychicsenator" data-widget-id="572873970350891010">Tweets by @psychicsenator</a>
@@ -56,52 +56,53 @@
         
 <!--SECOND COLUMN           -->
            
-            <section id="secondary">
+        <section id="secondary">
                                     
-                    <div id="form" class="contactContainer">
+            <div id="form" class="contactContainer">
 			<h2>Contact Form</h2>
 			<hr>
 			<h3>General Information</h3>
                 <p> Currently looking for design work!
                     Please contact me with any questions. Use this form or my e-mail address is:
+                </p>
+                <h3><a href = "mailto:jon.edwards456@gmail.com">jon.edwards456@gmail.com</a></h3>
+                <hr>
+			    <form action="contact.php" method="post">
+
+                    <p>
+                        <label for="name">Name:</label>
+                        <input name="name" id="name" type="text" class="required">
+                        <span>Please enter your name</span>
                     </p>
-                        <h3><a href = "mailto:jon.edwards456@gmail.com">jon.edwards456@gmail.com</a></h3>
-                        <hr>
-			<form action="contact.php" method="post">
 
-				<p>
-					<label for="name">Name:</label>
-					<input name="name" id="name" type="text" class="required">
-					<span>Please enter your name</span>
-				</p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input name="email" id="email" type="text" class="required"> 
+                        <span>Please enter a valid e-mail address</span>
+                    </p>
 
-				<p>
-					<label for="email">Email:</label>
-					<input name="email" id="email" type="text" class="required"> 
-					<span>Please enter a valid e-mail address</span>
-				</p>
-
-				<p>
-					<label for="subject">Subject:</label>
-					<input name="subject" id="subject" type="text"> 
-					<span>Please enter your subject</span>
-				</p>
+                    <p>
+                        <label for="subject">Subject:</label>
+                        <input name="subject" id="subject" type="text"> 
+                        <span>Please enter your subject</span>
+                    </p>
 				
-	<br>			
-<hr>
-        <br>    
+                    <br>			
+                    <hr>
+                    <br>    
             
-				<p>
-					<label for="message">Message</label>
-					<textarea name="message" id="message" class="required"></textarea> 
-					<span>Please enter your message</span>
-				</p>
-				<p class="submit">
-					<input type="submit" value="Submit" class="btn-submit">
-				</p>
-			</form>
+                    <p>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" class="required"></textarea> 
+                        <span>Please enter your message</span>
+                    </p>
+                    <p class="submit">
+                        <input type="submit" value="Submit" class="btn-submit">
+                    </p>
+                    
+			    </form>
 
-			
+<!--		*******************END CONTACT CONTAINER**************	-->
 		</div>
                     
                     

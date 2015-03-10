@@ -54,7 +54,7 @@
     margin: auto;
     }
    .pagedesc {
-       max-width:65%;
+       max-width:80%;
    } 
     
     
@@ -237,8 +237,22 @@ page : about
         
     }
 */
+    
+    #gallery li {
+    width: 20%;
+}
+ 
+#gallery li: nth-child(4n+1) {
+    clear: left;
+}
+    
+    
+    
+    
+    
+    
 .pagedesc {
-    max-width: 50%;
+    max-width: 60%;
 }
       
     .slotRect {
@@ -252,7 +266,7 @@ page : about
     
 }
     
-/* remove below to get to stack, try to use img at correct size to prevent need for responsive so can remove below rule to center at small size */
+
 .jelogomain {
      height: 100px;
      width: 100px;
@@ -324,7 +338,7 @@ page : about
     
     }
 .pagedesc {
-         max-width: 40%;
+         max-width: 45%;
      }
 
 .landDesc {

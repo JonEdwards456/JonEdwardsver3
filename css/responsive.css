@@ -191,7 +191,11 @@ page : about
        height: initial;
        margin: initial;
     }
- 
+ iframe {
+    width:320px;
+    height:180px;
+}
+    
 }
 
 @media (min-width: 768px) {
@@ -200,6 +204,8 @@ page : about
         width:25%;
     }
  
+    
+    
 }
 
 

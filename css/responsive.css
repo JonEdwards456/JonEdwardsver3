@@ -183,7 +183,7 @@ page : about
   */                                                                        
                                                                           
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
 /*    Change to single column layout*/
     .col {
        display: block;

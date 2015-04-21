@@ -19,36 +19,9 @@
   <body id="portfolio">  
       <img class="slotRect" src="img/slotted-rectangle.png"> 
     
-<header>
-    
-    
-     <div class="textlogo">
-         
-          
-	            <h1><a href="index.html">Jon Edwards Design</a></h1>
-	            <h2 >Web and Graphic Design</h2>
-          
-      
-     </div>
-          <a href="index.html">
-          <img class="jelogomain animexlogo" src="img/optimized/JEA%20LOGO%20MAIN.gif">
-        </a>
-     
-     
-      
-      <nav class="navdiv">
-         
-            <ul>
-                <li><a href="index.html" class="home">Home</a></li>
-	              <li><a href="portfolio.html" class="portfolio">Portfolio</a></li>
-	              <li><a href="about.html" class="about">About</a></li>
-	              <li><a href="contact.html" class="contact">Contact</a></li>
-	              <li><a href="coding.html" class="coding">Coding</a></li>
-	              <li><a href="fineArts.html" class="fineArts">Fine Arts</a></li>
-            </ul>
-          
-      </nav>
-      </header>
+<?php include ('header.php');
+
+?>
       
 <!-- PAGE DESC and show buttons **************    -->
       <div class="pagedesc">
@@ -63,12 +36,12 @@
       </div> 
 
    <div class="illusShowButtonContainer galButton">
-          <button class="showButton">Push to show Digital Art Portfolio</button>
+          <button class="showButton">Push to show Illustration Portfolio</button>
       </div>  
     <div class="vidsShowButtonContainer galButton">
           <button class="showButton">Push to show time laspe video</button>
       </div>
-    <h3>Resume Link:<a href="docs/JonEdwardsResume%202015.pdf"> <img src="img/resumeicon.png" alt = "Resume Icon" class= "resume-icon"></a></h3>
+    <h3>Resume Link:<a href="docs/JEdwards%202%20page%20resume.pdf"> <img src="img/resumeicon.png" alt = "Resume Icon" class= "resume-icon"></a></h3>
     <h3><a href="fineArts.html">Link to Painting/Sculpture Gallery</a></h3>
     
   </div>

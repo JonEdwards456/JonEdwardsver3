@@ -64,7 +64,7 @@ color: #03b41a;
 
 p{
    font-family: 'Istok Web', sans-serif;  
-    margin: 5px 10px;
+    margin: 20px 10px;
     
 }
 
@@ -72,6 +72,7 @@ p{
     overflow:hidden;
     text-indent: 25px;
     font-size: 1.2em;
+    margin-bottom: 20px;
 }
 h2, h3 {
         font-size: 2.00em;
@@ -157,16 +158,19 @@ a {
 
 img {
     max-width: 100%;
-}
+   }
 
 li {
-   
     list-style: none;
-    border-radius: 25px;
     margin: auto;
-/*    white-space: nowrap;*/
+   /*    white-space: nowrap;*/
 }
 
+section ul li:hover {
+       -moz-box-shadow:1px 1px 7px 7px rgba(73, 170, 144, 0.56);
+       -webkit-box-shadow:1px 1px 7px 7px rgba(73, 170, 144, 0.56);
+        box-shadow:1px 1px 7px 7px rgba(73, 170, 144, 0.56);
+}
 .plainLink {
     color:#005265;
     text-decoration: underline;
@@ -218,7 +222,7 @@ iframe {
     cursor: pointer;
     font-size: 15px;
     width: 100px;
-    margin: 0 10px 0 10px;
+    margin: 0 10px 10px 10px;
     
 }
 

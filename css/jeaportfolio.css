@@ -151,10 +151,8 @@ hr {
 
 a {
     text-decoration: none;
-    
-    
-
 }
+
 
 img {
     max-width: 100%;
@@ -600,6 +598,12 @@ h1 {
     font-size: 0.85em;
     color: #0c2b33;
     height: 2.0em;
+/*    display: inline;*/
+}
+
+#gallery li a p:hover {
+    color: #03b41a;
+     text-shadow: -1px 1px 3px #5cc0ff, 1px -1px 8px #52ff66;
 }
 
  .galleryHeading {
